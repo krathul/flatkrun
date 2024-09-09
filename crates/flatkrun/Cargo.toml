@@ -1,0 +1,10 @@
+[package]
+name = "flatkrun"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+clap = { workspace = true, features = ["cargo"] }
+libc = "0.2.158"
+serde = "1.0.209"
+serde_derive = "1.0.209"

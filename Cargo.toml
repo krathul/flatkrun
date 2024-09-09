@@ -1,10 +1,10 @@
-[package]
-name = "flatkrun"
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
 version = "0.1.0"
 edition = "2021"
 
-[dependencies]
-clap = { version = "4.5.16", features = ["cargo"] }
-libc = "0.2.158"
-serde = "1.0.209"
-serde_derive = "1.0.209"
+[workspace.dependencies]
+clap = { version = "4.5.16", default-features = false, features = ["std"] }

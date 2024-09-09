@@ -42,7 +42,7 @@ pub fn mount_container(container_id: &str) -> Result<String, std::io::Error> {
             if err.kind() == std::io::ErrorKind::NotFound {
                 println!("buildah was not found");
             } else {
-                println!("Error execting \"buildah mount\" : {}", err.to_string());
+                println!("Error executing \"buildah mount\" : {}", err.to_string());
             }
             std::process::exit(-1);
         }
